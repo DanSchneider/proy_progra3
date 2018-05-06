@@ -21,7 +21,6 @@ namespace ventas
 		private System.Windows.Forms.Label lblPASSWORD;
 		private System.Windows.Forms.Button btnCancelar;
 		private System.Windows.Forms.Button btnAceptar;
-		private System.Windows.Forms.Label label1;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -52,7 +51,6 @@ namespace ventas
 			this.lblPASSWORD = new System.Windows.Forms.Label();
 			this.btnCancelar = new System.Windows.Forms.Button();
 			this.btnAceptar = new System.Windows.Forms.Button();
-			this.label1 = new System.Windows.Forms.Label();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -65,19 +63,20 @@ namespace ventas
 			this.groupBox1.Controls.Add(this.lblPASSWORD);
 			this.groupBox1.Controls.Add(this.btnCancelar);
 			this.groupBox1.Controls.Add(this.btnAceptar);
-			this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.groupBox1.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.groupBox1.ForeColor = System.Drawing.Color.White;
-			this.groupBox1.Location = new System.Drawing.Point(35, 29);
+			this.groupBox1.Location = new System.Drawing.Point(41, 44);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(592, 381);
+			this.groupBox1.Size = new System.Drawing.Size(598, 389);
 			this.groupBox1.TabIndex = 0;
 			this.groupBox1.TabStop = false;
+			this.groupBox1.Text = "Ingrese su usuario y contraseña para acceder al sistema";
 			// 
 			// txtUsuario
 			// 
-			this.txtUsuario.Location = new System.Drawing.Point(279, 52);
+			this.txtUsuario.Location = new System.Drawing.Point(174, 220);
 			this.txtUsuario.Name = "txtUsuario";
-			this.txtUsuario.Size = new System.Drawing.Size(134, 26);
+			this.txtUsuario.Size = new System.Drawing.Size(134, 25);
 			this.txtUsuario.TabIndex = 8;
 			// 
 			// lblUSER_NAME
@@ -85,7 +84,7 @@ namespace ventas
 			this.lblUSER_NAME.AutoSize = true;
 			this.lblUSER_NAME.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
 			this.lblUSER_NAME.ForeColor = System.Drawing.Color.Transparent;
-			this.lblUSER_NAME.Location = new System.Drawing.Point(167, 53);
+			this.lblUSER_NAME.Location = new System.Drawing.Point(62, 221);
 			this.lblUSER_NAME.Name = "lblUSER_NAME";
 			this.lblUSER_NAME.Size = new System.Drawing.Size(54, 16);
 			this.lblUSER_NAME.TabIndex = 6;
@@ -93,9 +92,9 @@ namespace ventas
 			// 
 			// txtContraseña
 			// 
-			this.txtContraseña.Location = new System.Drawing.Point(279, 88);
+			this.txtContraseña.Location = new System.Drawing.Point(174, 256);
 			this.txtContraseña.Name = "txtContraseña";
-			this.txtContraseña.Size = new System.Drawing.Size(134, 26);
+			this.txtContraseña.Size = new System.Drawing.Size(134, 25);
 			this.txtContraseña.TabIndex = 9;
 			this.txtContraseña.UseSystemPasswordChar = true;
 			// 
@@ -104,7 +103,7 @@ namespace ventas
 			this.lblPASSWORD.AutoSize = true;
 			this.lblPASSWORD.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
 			this.lblPASSWORD.ForeColor = System.Drawing.Color.Transparent;
-			this.lblPASSWORD.Location = new System.Drawing.Point(140, 89);
+			this.lblPASSWORD.Location = new System.Drawing.Point(35, 257);
 			this.lblPASSWORD.Name = "lblPASSWORD";
 			this.lblPASSWORD.Size = new System.Drawing.Size(78, 16);
 			this.lblPASSWORD.TabIndex = 7;
@@ -112,13 +111,13 @@ namespace ventas
 			// 
 			// btnCancelar
 			// 
-			this.btnCancelar.BackColor = System.Drawing.Color.Maroon;
+			this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
 			this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 9.75F);
 			this.btnCancelar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
 			this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
 			this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.btnCancelar.Location = new System.Drawing.Point(319, 331);
+			this.btnCancelar.Location = new System.Drawing.Point(199, 323);
 			this.btnCancelar.Name = "btnCancelar";
 			this.btnCancelar.Size = new System.Drawing.Size(107, 32);
 			this.btnCancelar.TabIndex = 3;
@@ -128,13 +127,13 @@ namespace ventas
 			// 
 			// btnAceptar
 			// 
-			this.btnAceptar.BackColor = System.Drawing.Color.DarkSlateGray;
+			this.btnAceptar.BackColor = System.Drawing.Color.Transparent;
 			this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnAceptar.Font = new System.Drawing.Font("Century Gothic", 9.75F);
 			this.btnAceptar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
 			this.btnAceptar.Image = ((System.Drawing.Image)(resources.GetObject("btnAceptar.Image")));
 			this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.btnAceptar.Location = new System.Drawing.Point(168, 331);
+			this.btnAceptar.Location = new System.Drawing.Point(48, 323);
 			this.btnAceptar.Name = "btnAceptar";
 			this.btnAceptar.Size = new System.Drawing.Size(104, 32);
 			this.btnAceptar.TabIndex = 2;
@@ -142,25 +141,13 @@ namespace ventas
 			this.btnAceptar.UseVisualStyleBackColor = false;
 			this.btnAceptar.Click += new System.EventHandler(this.BtnAceptarClick);
 			// 
-			// label1
-			// 
-			this.label1.BackColor = System.Drawing.Color.Transparent;
-			this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.ForeColor = System.Drawing.Color.Transparent;
-			this.label1.Location = new System.Drawing.Point(138, 29);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(422, 18);
-			this.label1.TabIndex = 11;
-			this.label1.Text = "Ingrese su usuario y contraseña para acceder al sistema";
-			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.ClientSize = new System.Drawing.Size(663, 422);
-			this.Controls.Add(this.label1);
+			this.ClientSize = new System.Drawing.Size(678, 474);
 			this.Controls.Add(this.groupBox1);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;

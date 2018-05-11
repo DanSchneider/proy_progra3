@@ -63,7 +63,7 @@ namespace ventas
 			this.groupBox1.Controls.Add(this.lblPASSWORD);
 			this.groupBox1.Controls.Add(this.btnCancelar);
 			this.groupBox1.Controls.Add(this.btnAceptar);
-			this.groupBox1.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.groupBox1.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.groupBox1.ForeColor = System.Drawing.Color.White;
 			this.groupBox1.Location = new System.Drawing.Point(41, 44);
 			this.groupBox1.Name = "groupBox1";
@@ -74,9 +74,10 @@ namespace ventas
 			// 
 			// txtUsuario
 			// 
+			this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtUsuario.Location = new System.Drawing.Point(174, 220);
 			this.txtUsuario.Name = "txtUsuario";
-			this.txtUsuario.Size = new System.Drawing.Size(134, 25);
+			this.txtUsuario.Size = new System.Drawing.Size(134, 26);
 			this.txtUsuario.TabIndex = 8;
 			// 
 			// lblUSER_NAME
@@ -92,9 +93,10 @@ namespace ventas
 			// 
 			// txtContraseña
 			// 
+			this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtContraseña.Location = new System.Drawing.Point(174, 256);
 			this.txtContraseña.Name = "txtContraseña";
-			this.txtContraseña.Size = new System.Drawing.Size(134, 25);
+			this.txtContraseña.Size = new System.Drawing.Size(134, 26);
 			this.txtContraseña.TabIndex = 9;
 			this.txtContraseña.UseSystemPasswordChar = true;
 			// 
@@ -145,10 +147,16 @@ namespace ventas
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.AutoSize = true;
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(678, 474);
 			this.Controls.Add(this.groupBox1);
+<<<<<<< HEAD
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+=======
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+>>>>>>> 3bf67a2c9e5ce283b25c7b031e87ff54cfaa7b44
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "MainForm";

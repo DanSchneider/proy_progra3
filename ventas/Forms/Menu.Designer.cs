@@ -131,7 +131,7 @@ namespace ventas
 			this.Controls.Add(this.btnProductos);
 			this.Controls.Add(this.btnVneta);
 			this.Name = "Menu";
-			this.Text = "Menu Administrador";
+			this.Text = "Menu Principal";
 			this.ResumeLayout(false);
 
 		}

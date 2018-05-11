@@ -51,44 +51,51 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AgregarUsuarios.cs" />
-    <Compile Include="AgregarUsuarios.Designer.cs">
+    <Compile Include="Clases\conexion.cs" />
+    <Compile Include="Clases\SqlUsuarios\Usuarios.cs" />
+    <Compile Include="Clases\SqlUsuarios\usuariosSql.cs" />
+    <Compile Include="Forms\AgregarUsuarios.cs" />
+    <Compile Include="Forms\AgregarUsuarios.Designer.cs">
       <DependentUpon>AgregarUsuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="conexion.cs" />
-    <Compile Include="MainForm.cs" />
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Forms\MainForm.cs" />
+    <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu.cs" />
-    <Compile Include="Menu.Designer.cs">
+    <Compile Include="Forms\Menu.cs" />
+    <Compile Include="Forms\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuUsuario.cs" />
-    <Compile Include="MenuUsuario.Designer.cs">
+    <Compile Include="Forms\MenuUsuario.cs" />
+    <Compile Include="Forms\MenuUsuario.Designer.cs">
       <DependentUpon>MenuUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Usuarios.cs" />
-    <Compile Include="UsuariosSql.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AgregarUsuarios.resx">
+    <EmbeddedResource Include="Forms\AgregarUsuarios.resx">
       <DependentUpon>AgregarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu.resx">
+    <EmbeddedResource Include="Forms\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuUsuario.resx">
+    <EmbeddedResource Include="Forms\MenuUsuario.resx">
       <DependentUpon>MenuUsuario.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Clases" />
+    <Folder Include="Clases\SqlClientes" />
+    <Folder Include="Clases\SqlProductos" />
+    <Folder Include="Clases\SqlUsuarios" />
+    <Folder Include="Forms" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

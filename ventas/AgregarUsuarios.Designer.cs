@@ -55,11 +55,11 @@ namespace ventas
 			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.txtAgregaNombre = new System.Windows.Forms.TextBox();
-			this.txtAgregaAM = new System.Windows.Forms.TextBox();
-			this.txtAgregaPass = new System.Windows.Forms.TextBox();
-			this.txtAgregaNick = new System.Windows.Forms.TextBox();
 			this.txtAgregaAP = new System.Windows.Forms.TextBox();
+			this.txtAgregaNick = new System.Windows.Forms.TextBox();
+			this.txtAgregaPass = new System.Windows.Forms.TextBox();
+			this.txtAgregaAM = new System.Windows.Forms.TextBox();
+			this.txtAgregaNombre = new System.Windows.Forms.TextBox();
 			this.btnGuardar = new System.Windows.Forms.Button();
 			this.btnNuevo = new System.Windows.Forms.Button();
 			this.groupBox1.SuspendLayout();
@@ -124,26 +124,12 @@ namespace ventas
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "groupBox1";
 			// 
-			// txtAgregaNombre
+			// txtAgregaAP
 			// 
-			this.txtAgregaNombre.Location = new System.Drawing.Point(232, 43);
-			this.txtAgregaNombre.Name = "txtAgregaNombre";
-			this.txtAgregaNombre.Size = new System.Drawing.Size(373, 26);
-			this.txtAgregaNombre.TabIndex = 5;
-			// 
-			// txtAgregaAM
-			// 
-			this.txtAgregaAM.Location = new System.Drawing.Point(232, 137);
-			this.txtAgregaAM.Name = "txtAgregaAM";
-			this.txtAgregaAM.Size = new System.Drawing.Size(373, 26);
-			this.txtAgregaAM.TabIndex = 6;
-			// 
-			// txtAgregaPass
-			// 
-			this.txtAgregaPass.Location = new System.Drawing.Point(232, 233);
-			this.txtAgregaPass.Name = "txtAgregaPass";
-			this.txtAgregaPass.Size = new System.Drawing.Size(373, 26);
-			this.txtAgregaPass.TabIndex = 7;
+			this.txtAgregaAP.Location = new System.Drawing.Point(232, 93);
+			this.txtAgregaAP.Name = "txtAgregaAP";
+			this.txtAgregaAP.Size = new System.Drawing.Size(373, 26);
+			this.txtAgregaAP.TabIndex = 9;
 			// 
 			// txtAgregaNick
 			// 
@@ -152,19 +138,33 @@ namespace ventas
 			this.txtAgregaNick.Size = new System.Drawing.Size(373, 26);
 			this.txtAgregaNick.TabIndex = 8;
 			// 
-			// txtAgregaAP
+			// txtAgregaPass
 			// 
-			this.txtAgregaAP.Location = new System.Drawing.Point(232, 93);
-			this.txtAgregaAP.Name = "txtAgregaAP";
-			this.txtAgregaAP.Size = new System.Drawing.Size(373, 26);
-			this.txtAgregaAP.TabIndex = 9;
+			this.txtAgregaPass.Location = new System.Drawing.Point(232, 233);
+			this.txtAgregaPass.Name = "txtAgregaPass";
+			this.txtAgregaPass.Size = new System.Drawing.Size(373, 26);
+			this.txtAgregaPass.TabIndex = 7;
+			// 
+			// txtAgregaAM
+			// 
+			this.txtAgregaAM.Location = new System.Drawing.Point(232, 137);
+			this.txtAgregaAM.Name = "txtAgregaAM";
+			this.txtAgregaAM.Size = new System.Drawing.Size(373, 26);
+			this.txtAgregaAM.TabIndex = 6;
+			// 
+			// txtAgregaNombre
+			// 
+			this.txtAgregaNombre.Location = new System.Drawing.Point(232, 43);
+			this.txtAgregaNombre.Name = "txtAgregaNombre";
+			this.txtAgregaNombre.Size = new System.Drawing.Size(373, 26);
+			this.txtAgregaNombre.TabIndex = 5;
 			// 
 			// btnGuardar
 			// 
 			this.btnGuardar.ForeColor = System.Drawing.Color.Black;
-			this.btnGuardar.Location = new System.Drawing.Point(222, 12);
+			this.btnGuardar.Location = new System.Drawing.Point(226, 34);
 			this.btnGuardar.Name = "btnGuardar";
-			this.btnGuardar.Size = new System.Drawing.Size(75, 23);
+			this.btnGuardar.Size = new System.Drawing.Size(75, 28);
 			this.btnGuardar.TabIndex = 6;
 			this.btnGuardar.Text = "Guardar";
 			this.btnGuardar.UseVisualStyleBackColor = true;
@@ -173,9 +173,9 @@ namespace ventas
 			// btnNuevo
 			// 
 			this.btnNuevo.ForeColor = System.Drawing.Color.Black;
-			this.btnNuevo.Location = new System.Drawing.Point(390, 12);
+			this.btnNuevo.Location = new System.Drawing.Point(394, 34);
 			this.btnNuevo.Name = "btnNuevo";
-			this.btnNuevo.Size = new System.Drawing.Size(75, 23);
+			this.btnNuevo.Size = new System.Drawing.Size(75, 28);
 			this.btnNuevo.TabIndex = 7;
 			this.btnNuevo.Text = "Nuevo";
 			this.btnNuevo.UseVisualStyleBackColor = true;
@@ -191,7 +191,8 @@ namespace ventas
 			this.Controls.Add(this.groupBox1);
 			this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.ForeColor = System.Drawing.Color.White;
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "AgregarUsuarios";
 			this.Text = "AgregarUsuarios";
 			this.groupBox1.ResumeLayout(false);

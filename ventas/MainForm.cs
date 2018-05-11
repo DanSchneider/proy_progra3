@@ -9,10 +9,13 @@ namespace ventas
 
 	public partial class MainForm : Form
 	{
+
 		public MainForm()
 		{
+			
 
 			InitializeComponent();
+			
 			
 		}
 		void BtnAceptarClick(object sender, EventArgs e)
@@ -29,7 +32,7 @@ namespace ventas
 			
 			
 			codigo.CommandText = ("select * from usuarios where NICKNAME = '" +
-			txtUsuario.Text + "' and PASSWORD = '" + txtContraseña.Text + "' ");
+			                      txtUsuario.Text + "' and PASSWORD = '" + txtContraseña.Text + "' ");
 			
 			
 			
@@ -57,4 +60,5 @@ namespace ventas
 		}
 		
 	}
+	
 }

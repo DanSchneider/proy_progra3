@@ -10,6 +10,7 @@ namespace ventas
 {
 	partial class MainForm
 	{
+		
 		/// <summary>
 		/// Designer variable used to keep track of non-visual components.
 		/// </summary>

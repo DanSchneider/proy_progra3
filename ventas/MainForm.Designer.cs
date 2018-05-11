@@ -152,15 +152,15 @@ namespace ventas
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(678, 474);
 			this.Controls.Add(this.groupBox1);
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-=======
+
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
->>>>>>> 3bf67a2c9e5ce283b25c7b031e87ff54cfaa7b44
-=======
+
+
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
->>>>>>> 3bf67a2c9e5ce283b25c7b031e87ff54cfaa7b44
+
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "MainForm";

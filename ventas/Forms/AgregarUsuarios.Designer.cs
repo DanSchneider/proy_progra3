@@ -27,6 +27,7 @@ namespace ventas
 		private System.Windows.Forms.TextBox txtAgregaNombre;
 		private System.Windows.Forms.Button btnGuardar;
 		private System.Windows.Forms.Button btnNuevo;
+		private System.Windows.Forms.Button btnVer;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -62,6 +63,7 @@ namespace ventas
 			this.txtAgregaNombre = new System.Windows.Forms.TextBox();
 			this.btnGuardar = new System.Windows.Forms.Button();
 			this.btnNuevo = new System.Windows.Forms.Button();
+			this.btnVer = new System.Windows.Forms.Button();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -117,12 +119,13 @@ namespace ventas
 			this.groupBox1.Controls.Add(this.label1);
 			this.groupBox1.Controls.Add(this.label4);
 			this.groupBox1.Controls.Add(this.label3);
+			this.groupBox1.ForeColor = System.Drawing.Color.White;
 			this.groupBox1.Location = new System.Drawing.Point(12, 83);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Size = new System.Drawing.Size(698, 316);
 			this.groupBox1.TabIndex = 5;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "groupBox1";
+			this.groupBox1.Text = "Añadir usuarios";
 			// 
 			// txtAgregaAP
 			// 
@@ -162,23 +165,34 @@ namespace ventas
 			// btnGuardar
 			// 
 			this.btnGuardar.ForeColor = System.Drawing.Color.Black;
-			this.btnGuardar.Location = new System.Drawing.Point(226, 34);
+			this.btnGuardar.Location = new System.Drawing.Point(149, 22);
 			this.btnGuardar.Name = "btnGuardar";
-			this.btnGuardar.Size = new System.Drawing.Size(75, 28);
+			this.btnGuardar.Size = new System.Drawing.Size(144, 28);
 			this.btnGuardar.TabIndex = 6;
-			this.btnGuardar.Text = "Guardar";
+			this.btnGuardar.Text = "&Guardar";
 			this.btnGuardar.UseVisualStyleBackColor = true;
 			this.btnGuardar.Click += new System.EventHandler(this.BtnGuardarClick);
 			// 
 			// btnNuevo
 			// 
 			this.btnNuevo.ForeColor = System.Drawing.Color.Black;
-			this.btnNuevo.Location = new System.Drawing.Point(394, 34);
+			this.btnNuevo.Location = new System.Drawing.Point(311, 22);
 			this.btnNuevo.Name = "btnNuevo";
-			this.btnNuevo.Size = new System.Drawing.Size(75, 28);
+			this.btnNuevo.Size = new System.Drawing.Size(144, 28);
 			this.btnNuevo.TabIndex = 7;
-			this.btnNuevo.Text = "Nuevo";
+			this.btnNuevo.Text = "&Nuevo";
 			this.btnNuevo.UseVisualStyleBackColor = true;
+			// 
+			// btnVer
+			// 
+			this.btnVer.ForeColor = System.Drawing.Color.Black;
+			this.btnVer.Location = new System.Drawing.Point(473, 22);
+			this.btnVer.Name = "btnVer";
+			this.btnVer.Size = new System.Drawing.Size(144, 28);
+			this.btnVer.TabIndex = 8;
+			this.btnVer.Text = "&Buscar usuarios";
+			this.btnVer.UseVisualStyleBackColor = true;
+			this.btnVer.Click += new System.EventHandler(this.btnVer_Click);
 			// 
 			// AgregarUsuarios
 			// 
@@ -186,6 +200,7 @@ namespace ventas
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Black;
 			this.ClientSize = new System.Drawing.Size(732, 427);
+			this.Controls.Add(this.btnVer);
 			this.Controls.Add(this.btnNuevo);
 			this.Controls.Add(this.btnGuardar);
 			this.Controls.Add(this.groupBox1);

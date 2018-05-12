@@ -34,7 +34,9 @@
     <Reference Include="Microsoft.CSharp">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="mscorlib" />
     <Reference Include="MySql.Data" />
+    <Reference Include="MySql.Data.Entity" />
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -58,6 +60,10 @@
     <Compile Include="Forms\AgregarUsuarios.Designer.cs">
       <DependentUpon>AgregarUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\BuscarUsuarios.cs" />
+    <Compile Include="Forms\BuscarUsuarios.Designer.cs">
+      <DependentUpon>BuscarUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MainForm.cs" />
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -75,6 +81,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Forms\AgregarUsuarios.resx">
       <DependentUpon>AgregarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BuscarUsuarios.resx">
+      <DependentUpon>BuscarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

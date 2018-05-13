@@ -77,6 +77,7 @@ namespace ventas.Forms
 			this.btnAceptar.TabIndex = 1;
 			this.btnAceptar.Text = "&Aceptar";
 			this.btnAceptar.UseVisualStyleBackColor = true;
+			this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
 			// 
 			// btnBuscar
 			// 
@@ -165,7 +166,9 @@ namespace ventas.Forms
 			this.Controls.Add(this.dataGridView1);
 			this.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.ForeColor = System.Drawing.Color.Black;
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
 			this.Margin = new System.Windows.Forms.Padding(4);
+			this.MaximizeBox = false;
 			this.Name = "BuscarUsuarios";
 			this.Text = "BuscarUsuarios";
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

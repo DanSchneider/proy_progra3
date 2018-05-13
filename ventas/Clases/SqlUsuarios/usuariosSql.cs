@@ -74,7 +74,7 @@ namespace ventas
 			Usuarios pUsuarios = new Usuarios();
 			MySqlConnection con = conexion.ObtenerConexion();
 
-			MySqlCommand _comando = new MySqlCommand(String.Format("SELECT ID_USUARIO, NOMBRE, APELLIDO_P, APELLIDO_M, NICKNAME, PASSWORD FROM usuarios  where where ID_USUARIO={0}", pId), con);
+			MySqlCommand _comando = new MySqlCommand(String.Format("SELECT ID_USUARIO, NOMBRE, APELLIDO_P, APELLIDO_M, NICKNAME, PASSWORD FROM usuarios  where ID_USUARIO={0}", pId), con);
 			MySqlDataReader _reader = _comando.ExecuteReader();
 			while (_reader.Read())
 			{

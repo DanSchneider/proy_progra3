@@ -130,6 +130,8 @@ namespace ventas
 			this.Controls.Add(this.btnBuscar);
 			this.Controls.Add(this.btnProductos);
 			this.Controls.Add(this.btnVneta);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.MaximizeBox = false;
 			this.Name = "Menu";
 			this.Text = "Menu Principal";
 			this.ResumeLayout(false);

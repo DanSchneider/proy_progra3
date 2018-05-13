@@ -38,8 +38,15 @@ namespace ventas
 		{
 	
 			Forms.BuscarUsuarios bu = new Forms.BuscarUsuarios();
-			bu.Show();
-			this.Hide();
+			bu.ShowDialog();
+			
+			if(bu.usuarioSeleccionado!=null){
+				txtAgregaNombre.Text = bu.usuarioSeleccionado.NOMBRE;
+				txtAgregaAP.Text = bu.usuarioSeleccionado.APELLIDO_P;
+				txtAgregaAM.Text = bu.usuarioSeleccionado.APELLIDO_M;
+				txtAgregaNick.Text = bu.usuarioSeleccionado.NICKNAME;
+				txtAgregaPass.Text = bu.usuarioSeleccionado.PASSWORD;
+			}
 		}
 		void btnNuevo_Click(object sender, EventArgs e)
 		{

@@ -44,6 +44,31 @@ namespace ventas
 			return _lista;
 		}
 		
+		public static List<Usuarios>  mostrarUsuarios(){
+			List<Usuarios> _lista2 = new List<Usuarios>();
+			
+			MySqlConnection con = conexion.ObtenerConexion();
+			
+			MySqlCommand _comando = new MySqlCommand(String.Format("SELECT * FROM usuarios"), con);
+			MySqlDataReader _reader = _comando.ExecuteReader();
+			while (_reader.Read())
+			{
+				Usuarios pUsuarios = new Usuarios();
+				
+				pUsuarios.Id = _reader.GetInt32(0);
+				pUsuarios.NOMBRE = _reader.GetString(1);
+				pUsuarios.APELLIDO_P = _reader.GetString(2);
+				pUsuarios.APELLIDO_M = _reader.GetString(3);
+				pUsuarios.NICKNAME = _reader.GetString(4);
+				pUsuarios.PASSWORD = _reader.GetString(5);
+
+				_lista2.Add(pUsuarios);
+			}
+			
+			return _lista2;
+			
+		}
+		
 		public static Usuarios ObtenerUsuarios(int pId)
 		{
 			Usuarios pUsuarios = new Usuarios();

@@ -26,5 +26,9 @@ namespace ventas.Forms
 			this.Close();
 			
 		}
+		void button1_Click(object sender, EventArgs e)
+		{
+			dataGridView1.DataSource = UsuariosSql.mostrarUsuarios();
+		}
 	}
 }

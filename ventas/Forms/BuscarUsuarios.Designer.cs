@@ -22,6 +22,7 @@ namespace ventas.Forms
 		private System.Windows.Forms.TextBox txtApellido;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Button button1;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -52,6 +53,7 @@ namespace ventas.Forms
 			this.txtApellido = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
+			this.button1 = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -60,7 +62,7 @@ namespace ventas.Forms
 			this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridView1.Location = new System.Drawing.Point(24, 116);
-			this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.Size = new System.Drawing.Size(631, 264);
 			this.dataGridView1.TabIndex = 0;
@@ -68,8 +70,8 @@ namespace ventas.Forms
 			// btnAceptar
 			// 
 			this.btnAceptar.ForeColor = System.Drawing.Color.Black;
-			this.btnAceptar.Location = new System.Drawing.Point(93, 394);
-			this.btnAceptar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.btnAceptar.Location = new System.Drawing.Point(24, 394);
+			this.btnAceptar.Margin = new System.Windows.Forms.Padding(4);
 			this.btnAceptar.Name = "btnAceptar";
 			this.btnAceptar.Size = new System.Drawing.Size(88, 26);
 			this.btnAceptar.TabIndex = 1;
@@ -80,7 +82,7 @@ namespace ventas.Forms
 			// 
 			this.btnBuscar.ForeColor = System.Drawing.Color.Black;
 			this.btnBuscar.Location = new System.Drawing.Point(567, 47);
-			this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
 			this.btnBuscar.Name = "btnBuscar";
 			this.btnBuscar.Size = new System.Drawing.Size(88, 26);
 			this.btnBuscar.TabIndex = 2;
@@ -92,7 +94,7 @@ namespace ventas.Forms
 			// 
 			this.btnCancelar.ForeColor = System.Drawing.Color.Black;
 			this.btnCancelar.Location = new System.Drawing.Point(567, 394);
-			this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
 			this.btnCancelar.Name = "btnCancelar";
 			this.btnCancelar.Size = new System.Drawing.Size(88, 26);
 			this.btnCancelar.TabIndex = 3;
@@ -103,7 +105,7 @@ namespace ventas.Forms
 			// txtNombre
 			// 
 			this.txtNombre.Location = new System.Drawing.Point(201, 34);
-			this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
 			this.txtNombre.Name = "txtNombre";
 			this.txtNombre.Size = new System.Drawing.Size(186, 21);
 			this.txtNombre.TabIndex = 4;
@@ -111,7 +113,7 @@ namespace ventas.Forms
 			// txtApellido
 			// 
 			this.txtApellido.Location = new System.Drawing.Point(201, 64);
-			this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txtApellido.Margin = new System.Windows.Forms.Padding(4);
 			this.txtApellido.Name = "txtApellido";
 			this.txtApellido.Size = new System.Drawing.Size(186, 21);
 			this.txtApellido.TabIndex = 5;
@@ -136,12 +138,23 @@ namespace ventas.Forms
 			this.label2.TabIndex = 7;
 			this.label2.Text = "Primer apellido";
 			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(301, 394);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(75, 26);
+			this.button1.TabIndex = 8;
+			this.button1.Text = "&Ver todo";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
+			// 
 			// BuscarUsuarios
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Black;
 			this.ClientSize = new System.Drawing.Size(697, 426);
+			this.Controls.Add(this.button1);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.txtApellido);
@@ -152,7 +165,7 @@ namespace ventas.Forms
 			this.Controls.Add(this.dataGridView1);
 			this.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.ForeColor = System.Drawing.Color.Black;
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "BuscarUsuarios";
 			this.Text = "BuscarUsuarios";
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

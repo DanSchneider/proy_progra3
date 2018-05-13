@@ -41,5 +41,19 @@ namespace ventas
 			bu.Show();
 			this.Hide();
 		}
+		void btnNuevo_Click(object sender, EventArgs e)
+		{
+			txtAgregaAM.Clear();
+			txtAgregaAP.Clear();
+			txtAgregaNick.Clear();
+			txtAgregaNombre.Clear();
+			txtAgregaPass.Clear();
+		}
+		void btnRegresar_Click(object sender, EventArgs e)
+		{
+			Menu m = new Menu();
+			m.Show();
+			this.Close();
+		}
 	}
 }

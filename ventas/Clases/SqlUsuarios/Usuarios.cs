@@ -3,7 +3,8 @@ using System;
 
 namespace ventas
 {
-
+	//Toda esta clase funciona para poder acceder a la información
+	//de los usuarios y operar con la misma
 	public class Usuarios
 	{
 		public int Id { get; set; }
@@ -13,11 +14,8 @@ namespace ventas
 		public string NICKNAME { get; set; }
 		public string PASSWORD { get; set; }
 		
+		public Usuarios(){}
 		
-		public Usuarios()
-		{
-		}
-
 		public Usuarios(int pId, string pNOMBRE, string pAPELLIDO_P,
 		                string pAPELLIDO_M, string pNICKNAME, string pPASSWORD){
 			this.Id = pId;

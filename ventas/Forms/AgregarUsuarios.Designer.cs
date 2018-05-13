@@ -28,6 +28,7 @@ namespace ventas
 		private System.Windows.Forms.Button btnGuardar;
 		private System.Windows.Forms.Button btnNuevo;
 		private System.Windows.Forms.Button btnVer;
+		private System.Windows.Forms.Button btnRegresar;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -64,6 +65,7 @@ namespace ventas
 			this.btnGuardar = new System.Windows.Forms.Button();
 			this.btnNuevo = new System.Windows.Forms.Button();
 			this.btnVer = new System.Windows.Forms.Button();
+			this.btnRegresar = new System.Windows.Forms.Button();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -182,6 +184,7 @@ namespace ventas
 			this.btnNuevo.TabIndex = 7;
 			this.btnNuevo.Text = "&Nuevo";
 			this.btnNuevo.UseVisualStyleBackColor = true;
+			this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
 			// 
 			// btnVer
 			// 
@@ -194,12 +197,24 @@ namespace ventas
 			this.btnVer.UseVisualStyleBackColor = true;
 			this.btnVer.Click += new System.EventHandler(this.btnVer_Click);
 			// 
+			// btnRegresar
+			// 
+			this.btnRegresar.ForeColor = System.Drawing.Color.Black;
+			this.btnRegresar.Location = new System.Drawing.Point(278, 405);
+			this.btnRegresar.Name = "btnRegresar";
+			this.btnRegresar.Size = new System.Drawing.Size(144, 28);
+			this.btnRegresar.TabIndex = 9;
+			this.btnRegresar.Text = "&Regresar";
+			this.btnRegresar.UseVisualStyleBackColor = true;
+			this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+			// 
 			// AgregarUsuarios
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Black;
-			this.ClientSize = new System.Drawing.Size(732, 427);
+			this.ClientSize = new System.Drawing.Size(732, 444);
+			this.Controls.Add(this.btnRegresar);
 			this.Controls.Add(this.btnVer);
 			this.Controls.Add(this.btnNuevo);
 			this.Controls.Add(this.btnGuardar);

@@ -30,5 +30,15 @@ namespace ventas
 			this.Hide();
 			
 		}
+		void btnVneta_Click(object sender, EventArgs e)
+		{
+			//redirección a la ventana de las ventas
+		}
+		void btnProductos_Click(object sender, EventArgs e)
+		{
+			Forms.MenuProductos mp = new Forms.MenuProductos();
+			mp.Show();
+			this.Hide();
+		}
 	}
 }

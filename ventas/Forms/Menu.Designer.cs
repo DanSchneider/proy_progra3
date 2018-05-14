@@ -44,9 +44,9 @@ namespace ventas
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
 			this.btnVneta = new System.Windows.Forms.Button();
 			this.btnProductos = new System.Windows.Forms.Button();
-			this.btnBuscar = new System.Windows.Forms.Button();
 			this.btnUsuarios = new System.Windows.Forms.Button();
 			this.button1 = new System.Windows.Forms.Button();
+			this.btnBuscar = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// btnVneta
@@ -56,13 +56,14 @@ namespace ventas
 			this.btnVneta.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.btnVneta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnVneta.Image = ((System.Drawing.Image)(resources.GetObject("btnVneta.Image")));
-			this.btnVneta.Location = new System.Drawing.Point(9, 84);
+			this.btnVneta.Location = new System.Drawing.Point(11, 88);
 			this.btnVneta.Name = "btnVneta";
-			this.btnVneta.Size = new System.Drawing.Size(130, 169);
+			this.btnVneta.Size = new System.Drawing.Size(145, 163);
 			this.btnVneta.TabIndex = 2;
 			this.btnVneta.Text = "Venta";
 			this.btnVneta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			this.btnVneta.UseVisualStyleBackColor = false;
+			this.btnVneta.Click += new System.EventHandler(this.btnVneta_Click);
 			// 
 			// btnProductos
 			// 
@@ -70,27 +71,14 @@ namespace ventas
 			this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.btnProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
 			this.btnProductos.Image = ((System.Drawing.Image)(resources.GetObject("btnProductos.Image")));
-			this.btnProductos.Location = new System.Drawing.Point(296, 84);
+			this.btnProductos.Location = new System.Drawing.Point(313, 88);
 			this.btnProductos.Name = "btnProductos";
 			this.btnProductos.Size = new System.Drawing.Size(145, 163);
 			this.btnProductos.TabIndex = 5;
 			this.btnProductos.Text = "Productos";
 			this.btnProductos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			this.btnProductos.UseVisualStyleBackColor = false;
-			// 
-			// btnBuscar
-			// 
-			this.btnBuscar.BackColor = System.Drawing.SystemColors.ScrollBar;
-			this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-			this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
-			this.btnBuscar.Location = new System.Drawing.Point(145, 84);
-			this.btnBuscar.Name = "btnBuscar";
-			this.btnBuscar.Size = new System.Drawing.Size(145, 163);
-			this.btnBuscar.TabIndex = 6;
-			this.btnBuscar.Text = "Buscar";
-			this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.btnBuscar.UseVisualStyleBackColor = false;
+			this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
 			// 
 			// btnUsuarios
 			// 
@@ -98,7 +86,7 @@ namespace ventas
 			this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.btnUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
 			this.btnUsuarios.Image = ((System.Drawing.Image)(resources.GetObject("btnUsuarios.Image")));
-			this.btnUsuarios.Location = new System.Drawing.Point(447, 84);
+			this.btnUsuarios.Location = new System.Drawing.Point(464, 88);
 			this.btnUsuarios.Name = "btnUsuarios";
 			this.btnUsuarios.Size = new System.Drawing.Size(143, 163);
 			this.btnUsuarios.TabIndex = 7;
@@ -118,13 +106,27 @@ namespace ventas
 			this.button1.UseVisualStyleBackColor = true;
 			this.button1.Click += new System.EventHandler(this.Button1Click);
 			// 
+			// btnBuscar
+			// 
+			this.btnBuscar.BackColor = System.Drawing.SystemColors.ScrollBar;
+			this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+			this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
+			this.btnBuscar.Location = new System.Drawing.Point(162, 88);
+			this.btnBuscar.Name = "btnBuscar";
+			this.btnBuscar.Size = new System.Drawing.Size(145, 163);
+			this.btnBuscar.TabIndex = 6;
+			this.btnBuscar.Text = "Clientes";
+			this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnBuscar.UseVisualStyleBackColor = false;
+			// 
 			// Menu
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Silver;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.ClientSize = new System.Drawing.Size(600, 391);
+			this.ClientSize = new System.Drawing.Size(619, 391);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.btnUsuarios);
 			this.Controls.Add(this.btnBuscar);

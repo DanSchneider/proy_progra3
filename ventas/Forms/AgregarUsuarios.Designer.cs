@@ -29,6 +29,8 @@ namespace ventas
 		private System.Windows.Forms.Button btnNuevo;
 		private System.Windows.Forms.Button btnVer;
 		private System.Windows.Forms.Button btnRegresar;
+		private System.Windows.Forms.Button btnEliminar;
+		private System.Windows.Forms.Button btnActualizar;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -66,6 +68,8 @@ namespace ventas
 			this.btnNuevo = new System.Windows.Forms.Button();
 			this.btnVer = new System.Windows.Forms.Button();
 			this.btnRegresar = new System.Windows.Forms.Button();
+			this.btnEliminar = new System.Windows.Forms.Button();
+			this.btnActualizar = new System.Windows.Forms.Button();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -122,7 +126,7 @@ namespace ventas
 			this.groupBox1.Controls.Add(this.label4);
 			this.groupBox1.Controls.Add(this.label3);
 			this.groupBox1.ForeColor = System.Drawing.Color.White;
-			this.groupBox1.Location = new System.Drawing.Point(12, 83);
+			this.groupBox1.Location = new System.Drawing.Point(28, 83);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Size = new System.Drawing.Size(698, 316);
 			this.groupBox1.TabIndex = 5;
@@ -200,7 +204,7 @@ namespace ventas
 			// btnRegresar
 			// 
 			this.btnRegresar.ForeColor = System.Drawing.Color.Black;
-			this.btnRegresar.Location = new System.Drawing.Point(278, 405);
+			this.btnRegresar.Location = new System.Drawing.Point(149, 416);
 			this.btnRegresar.Name = "btnRegresar";
 			this.btnRegresar.Size = new System.Drawing.Size(144, 28);
 			this.btnRegresar.TabIndex = 9;
@@ -208,12 +212,36 @@ namespace ventas
 			this.btnRegresar.UseVisualStyleBackColor = true;
 			this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
 			// 
+			// btnEliminar
+			// 
+			this.btnEliminar.ForeColor = System.Drawing.Color.Black;
+			this.btnEliminar.Location = new System.Drawing.Point(473, 416);
+			this.btnEliminar.Name = "btnEliminar";
+			this.btnEliminar.Size = new System.Drawing.Size(144, 28);
+			this.btnEliminar.TabIndex = 10;
+			this.btnEliminar.Text = "&Eliminar";
+			this.btnEliminar.UseVisualStyleBackColor = true;
+			this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+			// 
+			// btnActualizar
+			// 
+			this.btnActualizar.ForeColor = System.Drawing.Color.Black;
+			this.btnActualizar.Location = new System.Drawing.Point(311, 416);
+			this.btnActualizar.Name = "btnActualizar";
+			this.btnActualizar.Size = new System.Drawing.Size(144, 28);
+			this.btnActualizar.TabIndex = 11;
+			this.btnActualizar.Text = "&Actualizar";
+			this.btnActualizar.UseVisualStyleBackColor = true;
+			this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+			// 
 			// AgregarUsuarios
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Black;
-			this.ClientSize = new System.Drawing.Size(732, 444);
+			this.ClientSize = new System.Drawing.Size(755, 460);
+			this.Controls.Add(this.btnActualizar);
+			this.Controls.Add(this.btnEliminar);
 			this.Controls.Add(this.btnRegresar);
 			this.Controls.Add(this.btnVer);
 			this.Controls.Add(this.btnNuevo);

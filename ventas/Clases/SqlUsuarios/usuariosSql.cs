@@ -7,6 +7,9 @@ namespace ventas
 
 	public class UsuariosSql
 	{
+		
+		
+		
 		public static int Agregar(Usuarios pUsuarios)
 		{
 
@@ -90,6 +93,42 @@ namespace ventas
 			con.Close();
 			return pUsuarios;
 			
+		}
+		
+		public static int Actualizar(Usuarios pUsuarios)
+		{
+			int retorno = 0;
+			
+			MySqlConnection con = conexion.ObtenerConexion();
+			
+			MySqlCommand comando = new MySqlCommand(string.Format("Update usuarios set NOMBRE='"+pUsuarios.NOMBRE+"', APELLIDO_P='"+
+			                                                      pUsuarios.APELLIDO_P+"', APELLIDO_M='"+pUsuarios.APELLIDO_M+
+			                                                      "', NICKNAME='"+pUsuarios.NICKNAME+"', PASSWORD='"
+			                                                      +pUsuarios.PASSWORD+"' where ID_USUARIO='"+pUsuarios.Id+"'"), con);
+			
+			//MySqlCommand comando = new MySqlCommand(string.Format("Update clientes set NOMBRE='{0}', APELLIDO_P='{1}', APELLIDO_M='{2}', NICKNAME='{3}', PASSWORD='{4}' where ID_USUARIO={5}",
+			//  pUsuarios.NOMBRE, pUsuarios.APELLIDO_P, pUsuarios.NICKNAME, pUsuarios.PASSWORD, pUsuarios.Id), con);
+
+			retorno = comando.ExecuteNonQuery();
+			con.Close();
+			
+			return retorno;
+
+
+		}
+		
+		public static int Eliminar(int pId)
+		{
+			int retorno = 0;
+			
+			MySqlConnection con = conexion.ObtenerConexion();
+			MySqlCommand comando = new MySqlCommand(string.Format("Delete From usuarios where ID_USUARIO={0}", pId), con);
+
+			retorno = comando.ExecuteNonQuery();
+			con.Close();
+
+			return retorno;
+
 		}
 	}
 }

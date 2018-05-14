@@ -39,3 +39,6 @@ C:\Users\Luis\Desktop\proy_progra3\ventas\obj\Debug\ventas.csproj.GenerateResour
 C:\Users\Luis\Desktop\proy_progra3\ventas\obj\Debug\ventas.exe
 C:\Users\Luis\Desktop\proy_progra3\ventas\obj\Debug\ventas.pdb
 C:\Users\Luis\Desktop\proyecto programación 3\proy_progra3\ventas\obj\Debug\ventas.Forms.BuscarUsuarios.resources
+C:\Users\Luis\Desktop\proyecto programación 3\proy_progra3\ventas\obj\Debug\ventas.Forms.AgregarProductos.resources
+C:\Users\Luis\Desktop\proyecto programación 3\proy_progra3\ventas\obj\Debug\ventas.Forms.MenuProductos.resources
+C:\Users\Luis\Desktop\proyecto programación 3\proy_progra3\ventas\obj\Debug\ventas.Forms.BuscarProducto.resources

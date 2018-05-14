@@ -54,11 +54,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\conexion.cs" />
+    <Compile Include="Clases\SqlProductos\Productos.cs" />
+    <Compile Include="Clases\SqlProductos\ProductosSql.cs" />
     <Compile Include="Clases\SqlUsuarios\Usuarios.cs" />
     <Compile Include="Clases\SqlUsuarios\usuariosSql.cs" />
+    <Compile Include="Forms\AgregarProductos.cs" />
+    <Compile Include="Forms\AgregarProductos.Designer.cs">
+      <DependentUpon>AgregarProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AgregarUsuarios.cs" />
     <Compile Include="Forms\AgregarUsuarios.Designer.cs">
       <DependentUpon>AgregarUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BuscarProducto.cs" />
+    <Compile Include="Forms\BuscarProducto.Designer.cs">
+      <DependentUpon>BuscarProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\BuscarUsuarios.cs" />
     <Compile Include="Forms\BuscarUsuarios.Designer.cs">
@@ -72,6 +82,10 @@
     <Compile Include="Forms\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\MenuProductos.cs" />
+    <Compile Include="Forms\MenuProductos.Designer.cs">
+      <DependentUpon>MenuProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -79,8 +93,14 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\AgregarProductos.resx">
+      <DependentUpon>AgregarProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AgregarUsuarios.resx">
       <DependentUpon>AgregarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BuscarProducto.resx">
+      <DependentUpon>BuscarProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BuscarUsuarios.resx">
       <DependentUpon>BuscarUsuarios.cs</DependentUpon>
@@ -90,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MenuProductos.resx">
+      <DependentUpon>MenuProductos.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

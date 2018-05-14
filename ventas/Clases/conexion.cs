@@ -12,7 +12,7 @@ namespace ventas
        {
 		 		// cambiar por el usuario y contraseña de la db que se tenga.
 		 		MySqlConnection conectar = new MySqlConnection(
-		 			"server=127.0.0.1; database=p_venta1; Uid=root; pwd=newborn;");
+		 			"server=127.0.0.1; database=p_venta2; Uid=root; pwd=newborn;");
 
            		conectar.Open();
            		return conectar;

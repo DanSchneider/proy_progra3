@@ -5,21 +5,14 @@ using System.Windows.Forms;
 
 namespace ventas.Forms
 {
-	/// <summary>
-	/// Description of MenuProductos.
-	/// </summary>
+
 	public partial class MenuProductos : Form
 	{
 		public MenuProductos()
 		{
-			//
-			// The InitializeComponent() call is required for Windows Forms designer support.
-			//
+
 			InitializeComponent();
-			
-			//
-			// TODO: Add constructor code after the InitializeComponent() call.
-			//
+
 		}
 		void button3_Click(object sender, EventArgs e)
 		{
@@ -32,6 +25,11 @@ namespace ventas.Forms
 			AgregarProductos ag = new AgregarProductos();
 			ag.Show();
 			this.Hide();
+		}
+		void button2_Click(object sender, EventArgs e)
+		{
+			BuscarProducto bp = new BuscarProducto();
+			bp.ShowDialog();
 		}
 	}
 }

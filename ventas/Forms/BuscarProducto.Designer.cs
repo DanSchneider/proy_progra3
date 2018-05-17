@@ -16,9 +16,7 @@ namespace ventas.Forms
 		private System.ComponentModel.IContainer components = null;
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.TextBox txtid;
-		private System.Windows.Forms.TextBox txtNombre;
 		private System.Windows.Forms.Button btnCancelar;
 		private System.Windows.Forms.Button btnBuscar;
 		private System.Windows.Forms.Button btnAceptar;
@@ -47,9 +45,7 @@ namespace ventas.Forms
 		{
 			this.button1 = new System.Windows.Forms.Button();
 			this.label2 = new System.Windows.Forms.Label();
-			this.label1 = new System.Windows.Forms.Label();
 			this.txtid = new System.Windows.Forms.TextBox();
-			this.txtNombre = new System.Windows.Forms.TextBox();
 			this.btnCancelar = new System.Windows.Forms.Button();
 			this.btnBuscar = new System.Windows.Forms.Button();
 			this.btnAceptar = new System.Windows.Forms.Button();
@@ -77,16 +73,6 @@ namespace ventas.Forms
 			this.label2.TabIndex = 16;
 			this.label2.Text = "ID del producto";
 			// 
-			// label1
-			// 
-			this.label1.ForeColor = System.Drawing.Color.Black;
-			this.label1.Location = new System.Drawing.Point(144, 15);
-			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(65, 26);
-			this.label1.TabIndex = 15;
-			this.label1.Text = "Nombre";
-			// 
 			// txtid
 			// 
 			this.txtid.Location = new System.Drawing.Point(227, 34);
@@ -95,14 +81,6 @@ namespace ventas.Forms
 			this.txtid.Size = new System.Drawing.Size(186, 20);
 			this.txtid.TabIndex = 14;
 			this.txtid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtid_KeyPress);
-			// 
-			// txtNombre
-			// 
-			this.txtNombre.Location = new System.Drawing.Point(227, 15);
-			this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
-			this.txtNombre.Name = "txtNombre";
-			this.txtNombre.Size = new System.Drawing.Size(186, 20);
-			this.txtNombre.TabIndex = 13;
 			// 
 			// btnCancelar
 			// 
@@ -157,9 +135,7 @@ namespace ventas.Forms
 			this.ClientSize = new System.Drawing.Size(718, 414);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.label2);
-			this.Controls.Add(this.label1);
 			this.Controls.Add(this.txtid);
-			this.Controls.Add(this.txtNombre);
 			this.Controls.Add(this.btnCancelar);
 			this.Controls.Add(this.btnBuscar);
 			this.Controls.Add(this.btnAceptar);

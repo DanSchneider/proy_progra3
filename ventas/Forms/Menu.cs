@@ -32,12 +32,21 @@ namespace ventas
 		}
 		void btnVneta_Click(object sender, EventArgs e)
 		{
-			//redirección a la ventana de las ventas
+			puntoDeVenta pv = new puntoDeVenta();
+			pv.lblUser.Text = label2.Text;
+			pv.Show();
+			this.Hide();
 		}
 		void btnProductos_Click(object sender, EventArgs e)
 		{
 			Forms.MenuProductos mp = new Forms.MenuProductos();
 			mp.Show();
+			this.Hide();
+		}
+		void btnBuscar_Click(object sender, EventArgs e)
+		{
+			Forms.Clientes cl = new Forms.Clientes();
+			cl.Show();
 			this.Hide();
 		}
 	}

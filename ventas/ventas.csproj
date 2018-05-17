@@ -54,10 +54,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\conexion.cs" />
+    <Compile Include="Clases\SqlClientes\Clientes.cs" />
+    <Compile Include="Clases\SqlClientes\ClientesSql.cs" />
     <Compile Include="Clases\SqlProductos\Productos.cs" />
     <Compile Include="Clases\SqlProductos\ProductosSql.cs" />
     <Compile Include="Clases\SqlUsuarios\Usuarios.cs" />
     <Compile Include="Clases\SqlUsuarios\usuariosSql.cs" />
+    <Compile Include="Clases\SqlVentas\SqlVentas.cs" />
+    <Compile Include="Clases\SqlVentas\Ventas.cs" />
     <Compile Include="Forms\AgregarProductos.cs" />
     <Compile Include="Forms\AgregarProductos.Designer.cs">
       <DependentUpon>AgregarProductos.cs</DependentUpon>
@@ -74,6 +78,18 @@
     <Compile Include="Forms\BuscarUsuarios.Designer.cs">
       <DependentUpon>BuscarUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Clientes.cs" />
+    <Compile Include="Forms\Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cobrar.cs" />
+    <Compile Include="Forms\Cobrar.Designer.cs">
+      <DependentUpon>Cobrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EcClientes.cs" />
+    <Compile Include="Forms\EcClientes.Designer.cs">
+      <DependentUpon>EcClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MainForm.cs" />
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -85,6 +101,14 @@
     <Compile Include="Forms\MenuProductos.cs" />
     <Compile Include="Forms\MenuProductos.Designer.cs">
       <DependentUpon>MenuProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\puntoDeVenta.cs" />
+    <Compile Include="Forms\puntoDeVenta.Designer.cs">
+      <DependentUpon>puntoDeVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VerClientes.cs" />
+    <Compile Include="Forms\VerClientes.Designer.cs">
+      <DependentUpon>VerClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -105,6 +129,15 @@
     <EmbeddedResource Include="Forms\BuscarUsuarios.resx">
       <DependentUpon>BuscarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cobrar.resx">
+      <DependentUpon>Cobrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EcClientes.resx">
+      <DependentUpon>EcClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,9 +147,16 @@
     <EmbeddedResource Include="Forms\MenuProductos.resx">
       <DependentUpon>MenuProductos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\puntoDeVenta.resx">
+      <DependentUpon>puntoDeVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VerClientes.resx">
+      <DependentUpon>VerClientes.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Clases" />
+    <Folder Include="Clases\SqlVentas" />
     <Folder Include="Clases\SqlClientes" />
     <Folder Include="Clases\SqlProductos" />
     <Folder Include="Clases\SqlUsuarios" />

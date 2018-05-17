@@ -115,6 +115,28 @@ namespace ventas.Forms
 
 			}
 		}
+		void btnEliminar_Click(object sender, EventArgs e)
+		{
+			if (MessageBox.Show("¿Esta Seguro que desea eliminar el producto Actual?", "Advertencia!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+			{
+				if (ProductosSql.Eliminar(productoActual.Id) > 0)
+				{
+					MessageBox.Show("Producto Eliminado Correctamente!", "Cliente Eliminado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+					txtpn.Clear();
+					txtexis.Clear();
+					txtpv.Clear();
+					txtnom.Clear();
+				}
+				else
+				{
+					MessageBox.Show("No se pudo eliminar el Producto", "Usuario No Eliminado", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+				}
+			}
+			else
+				MessageBox.Show("Se cancelo la eliminacion", "Eliminacion Cancelada", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+			
+			
+		}
 		
 	}
 }

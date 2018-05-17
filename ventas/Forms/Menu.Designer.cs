@@ -19,6 +19,8 @@ namespace ventas
 		private System.Windows.Forms.Button btnBuscar;
 		private System.Windows.Forms.Button btnUsuarios;
 		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Label label1;
+		public System.Windows.Forms.Label label2;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -47,6 +49,8 @@ namespace ventas
 			this.btnUsuarios = new System.Windows.Forms.Button();
 			this.button1 = new System.Windows.Forms.Button();
 			this.btnBuscar = new System.Windows.Forms.Button();
+			this.label1 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// btnVneta
@@ -119,6 +123,22 @@ namespace ventas
 			this.btnBuscar.Text = "Clientes";
 			this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			this.btnBuscar.UseVisualStyleBackColor = false;
+			this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+			// 
+			// label1
+			// 
+			this.label1.Location = new System.Drawing.Point(191, 9);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(100, 23);
+			this.label1.TabIndex = 9;
+			this.label1.Text = "Sesión actual:";
+			// 
+			// label2
+			// 
+			this.label2.Location = new System.Drawing.Point(282, 9);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(176, 23);
+			this.label2.TabIndex = 10;
 			// 
 			// Menu
 			// 
@@ -127,6 +147,8 @@ namespace ventas
 			this.BackColor = System.Drawing.Color.Silver;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(619, 391);
+			this.Controls.Add(this.label2);
+			this.Controls.Add(this.label1);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.btnUsuarios);
 			this.Controls.Add(this.btnBuscar);

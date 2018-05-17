@@ -20,7 +20,7 @@ namespace ventas.Forms
 		
 		void btnBuscar_Click(object sender, EventArgs e)
 		{
-			dataGridView1.DataSource = ProductosSql.Buscar(txtNombre.Text, Convert.ToInt32(txtid.Text));
+			dataGridView1.DataSource = ProductosSql.Buscar(Convert.ToInt32(txtid.Text));
 		}
 		
 		

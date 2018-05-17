@@ -16,7 +16,7 @@ namespace ventas
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
 		private System.Windows.Forms.GroupBox groupBox1;
-		private System.Windows.Forms.TextBox txtUsuario;
+		public System.Windows.Forms.TextBox txtUsuario;
 		private System.Windows.Forms.Label lblUSER_NAME;
 		private System.Windows.Forms.TextBox txtContraseña;
 		private System.Windows.Forms.Label lblPASSWORD;
@@ -153,15 +153,7 @@ namespace ventas
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(678, 474);
 			this.Controls.Add(this.groupBox1);
-
-
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-
-
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "MainForm";

@@ -24,12 +24,12 @@ namespace ventas
 			return  retorno;
 		}
 		
-		public static List<Productos> Buscar(string prNOMBRE, int prId)
+		public static List<Productos> Buscar(int prId)
 		{
 			List<Productos> _lista = new List<Productos>();
 			
 			MySqlCommand _comando = new MySqlCommand(String.Format(
-				"SELECT * FROM productos  where NOMBRE ='{0}' or ID_PRODUCTO='{1}'", prNOMBRE,prId), conexion.ObtenerConexion());
+				"SELECT * FROM productos  where ID_PRODUCTO='{0}'",prId), conexion.ObtenerConexion());
 			MySqlDataReader _reader = _comando.ExecuteReader();
 			while (_reader.Read())
 			{

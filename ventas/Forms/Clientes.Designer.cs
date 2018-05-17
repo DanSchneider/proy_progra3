@@ -1,14 +1,14 @@
 ﻿/*
  * Creado por SharpDevelop.
  * Usuario: Luis
- * Fecha: 14/05/2018
- * Hora: 01:23 p. m.
+ * Fecha: 17/05/2018
+ * Hora: 02:11 a. m.
  * 
  * Para cambiar esta plantilla use Herramientas | Opciones | Codificación | Editar Encabezados Estándar
  */
 namespace ventas.Forms
 {
-	partial class MenuProductos
+	partial class Clientes
 	{
 		/// <summary>
 		/// Designer variable used to keep track of non-visual components.
@@ -48,53 +48,53 @@ namespace ventas.Forms
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(89, 82);
+			this.button1.Location = new System.Drawing.Point(125, 206);
 			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(88, 46);
+			this.button1.Size = new System.Drawing.Size(75, 43);
 			this.button1.TabIndex = 0;
-			this.button1.Text = "Agregar productos";
+			this.button1.Text = "&Regresar ";
 			this.button1.UseVisualStyleBackColor = true;
 			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// button2
 			// 
-			this.button2.Location = new System.Drawing.Point(194, 82);
+			this.button2.Location = new System.Drawing.Point(53, 81);
 			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(88, 46);
+			this.button2.Size = new System.Drawing.Size(75, 52);
 			this.button2.TabIndex = 1;
-			this.button2.Text = "Ver/Buscar productos";
+			this.button2.Text = "Ver clientes";
 			this.button2.UseVisualStyleBackColor = true;
 			this.button2.Click += new System.EventHandler(this.button2_Click);
 			// 
 			// button3
 			// 
-			this.button3.Location = new System.Drawing.Point(142, 184);
+			this.button3.Location = new System.Drawing.Point(189, 81);
 			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(88, 46);
+			this.button3.Size = new System.Drawing.Size(74, 52);
 			this.button3.TabIndex = 2;
-			this.button3.Text = "Regresar";
+			this.button3.Text = "Estado de cuenta de clientes";
 			this.button3.UseVisualStyleBackColor = true;
 			this.button3.Click += new System.EventHandler(this.button3_Click);
 			// 
 			// label1
 			// 
-			this.label1.Location = new System.Drawing.Point(118, 22);
+			this.label1.Location = new System.Drawing.Point(100, 9);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(138, 23);
+			this.label1.Size = new System.Drawing.Size(100, 23);
 			this.label1.TabIndex = 3;
-			this.label1.Text = "Seleccione una acción";
+			this.label1.Text = "Elija una opción:";
 			// 
-			// MenuProductos
+			// Clientes
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(382, 242);
+			this.ClientSize = new System.Drawing.Size(332, 278);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.button3);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.button1);
-			this.Name = "MenuProductos";
-			this.Text = "MenuProductos";
+			this.Name = "Clientes";
+			this.Text = "Clientes";
 			this.ResumeLayout(false);
 
 		}

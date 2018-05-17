@@ -97,6 +97,11 @@ namespace ventas
 				if (UsuariosSql.Eliminar(usuarioActual.Id) > 0)
 				{
 					MessageBox.Show("Usuario Eliminado Correctamente!", "Cliente Eliminado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+					txtAgregaAM.Clear();
+					txtAgregaAP.Clear();
+					txtAgregaNick.Clear();
+					txtAgregaNombre.Clear();
+					txtAgregaPass.Clear();
 				}
 				else
 				{
@@ -105,6 +110,8 @@ namespace ventas
 			}
 			else
 				MessageBox.Show("Se cancelo la eliminacion", "Eliminacion Cancelada", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+			
+			
 		}
 	}
 }

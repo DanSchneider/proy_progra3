@@ -42,8 +42,11 @@ namespace ventas
 			if (leer.Read()) {
 				MessageBox.Show("Bienvenido al sistema " + txtUsuario.Text + "!");
 				Menu m = new Menu();
+				m.label2.Text = txtUsuario.Text;
 				m.Show();
 				this.Hide();
+				
+				 
 				
 			}
 			

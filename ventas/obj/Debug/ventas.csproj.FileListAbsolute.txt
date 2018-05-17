@@ -42,3 +42,8 @@ C:\Users\Luis\Desktop\proyecto programación 3\proy_progra3\ventas\obj\Debug\ven
 C:\Users\Luis\Desktop\proyecto programación 3\proy_progra3\ventas\obj\Debug\ventas.Forms.AgregarProductos.resources
 C:\Users\Luis\Desktop\proyecto programación 3\proy_progra3\ventas\obj\Debug\ventas.Forms.MenuProductos.resources
 C:\Users\Luis\Desktop\proyecto programación 3\proy_progra3\ventas\obj\Debug\ventas.Forms.BuscarProducto.resources
+C:\Users\Luis\Desktop\proyecto programación 3\proy_progra3\ventas\obj\Debug\ventas.puntoDeVenta.resources
+C:\Users\Luis\Desktop\proyecto programación 3\proy_progra3\ventas\obj\Debug\ventas.Forms.Cobrar.resources
+C:\Users\Luis\Desktop\proyecto programación 3\proy_progra3\ventas\obj\Debug\ventas.Forms.Clientes.resources
+C:\Users\Luis\Desktop\proyecto programación 3\proy_progra3\ventas\obj\Debug\ventas.Forms.EcClientes.resources
+C:\Users\Luis\Desktop\proyecto programación 3\proy_progra3\ventas\obj\Debug\ventas.Forms.VerClientes.resources

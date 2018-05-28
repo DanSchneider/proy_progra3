@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -19,6 +18,7 @@ namespace ventas.Forms
 		
 		void btnGuardar_Click(object sender, EventArgs e)
 		{
+			
 			Productos prProductos = new Productos();
 			prProductos.NOMBRE = txtnom.Text.Trim();
 			prProductos.EXISTENCIA = Convert.ToInt32(txtexis.Text.Trim());
